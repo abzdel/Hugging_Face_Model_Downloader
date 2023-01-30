@@ -25,11 +25,12 @@ cargo run
 cd ..
 
 # create environment variable that holds contents of model.txt
-export MODEL=$(cat model.txt)
+#export MODEL=$(cat model.txt) || echo "export failed"
 
 # save model to local directory as ONNX file
 # idea would be to put this line in a cloud environment?
-optimum-cli export onnx --model $MODEL model/
+#rm -r model/
+#optimum-cli export onnx --model $MODEL model/
 
 # exit w/ success status
 exit 1

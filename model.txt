@@ -1,1 +1,1 @@
-facebook/detr-resnet-101
+https://huggingface.co/prajjwal1/bert-tiny
