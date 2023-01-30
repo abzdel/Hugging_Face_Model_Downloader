@@ -18,7 +18,11 @@ pub fn main() {
 
     // call get_model_name function
     let model_name = getModelFromLink(&url);
-    println!("model_name: {}", model_name);
+    // println!("model_name: {}", model_name);
 
+    // add newline to model_name
+    let model_name = model_name + "\n";
 
+    // export model_name to replace model.txt in previous folder
+    std::fs::write("../model.txt", model_name).unwrap();
 }

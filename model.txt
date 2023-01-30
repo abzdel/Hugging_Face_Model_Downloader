@@ -1,1 +1,1 @@
-https://huggingface.co/facebook/detr-resnet-101
+facebook/detr-resnet-101
