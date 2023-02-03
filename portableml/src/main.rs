@@ -27,15 +27,6 @@ pub fn main() {
         .arg(model_name)
         .arg("../model/");
 
-    // tool is working, but im not currently getting any output
-    match cmd.output() {
-        Ok(o) => {
-            unsafe{
-                println!("stdout: {}", String::from_utf8_unchecked(o.stdout));
-            }
 
-        }
-        Err(e) => {println!("error: {}", e);}
-
-    }
+    println!("Model downloaded to ../model/")
 }

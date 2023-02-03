@@ -21,7 +21,8 @@ echo "$line" > model.txt
 
 # run rust project to truncate link to model name
 cd portableml
-cargo run
+# run with release flag to ensure smallest possible binary
+cargo run --release
 cd ..
 
 # create environment variable that holds contents of model.txt
