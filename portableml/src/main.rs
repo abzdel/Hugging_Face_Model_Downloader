@@ -28,5 +28,13 @@ pub fn main() {
         .arg("../model/");
 
 
-    println!("Model downloaded to ../model/")
+    
+    match cmd.output() {
+        Ok(output) => {
+            println!("Model downloaded to ../model/: {}", output.status);
+        }
+        Err(e) => {
+            println!("Error: {}", e);
+        }
+    }
 }
