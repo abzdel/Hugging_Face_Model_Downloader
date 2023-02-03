@@ -1,1 +1,1 @@
-https://huggingface.co/prajjwal1/bert-tiny
+https://huggingface.co/distilbert-base-cased-distilled-squad

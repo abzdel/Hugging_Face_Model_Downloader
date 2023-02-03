@@ -10,7 +10,7 @@ line=$1
 # if no argument was entered, print error
 [ -z "$line" ] && echo "please enter your link to a model from Hugging Face" && exit 1
 
-# if argument is not link to a model, print error
+# if argument is not link to a HF model, print error
 [[ $line != *"huggingface"* ]] && echo "please enter a link to a model from Hugging Face" && exit 1
 
 echo "your link is: $1"
