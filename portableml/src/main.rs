@@ -27,7 +27,7 @@ pub fn main() {
         .arg(model_name)
         .arg("../model/");
 
-
+// optimum-cli export onnx --model distilbert-base-cased-distilled-squad /model
     
     match cmd.output() {
         Ok(output) => {
