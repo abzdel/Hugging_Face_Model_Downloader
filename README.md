@@ -12,7 +12,7 @@ git clone https://github.com/nogibjj/Hugging_Face_Model_Downloader.git
 ```python
 make install
 ```
-3) Run the application (automatically scrapes data + trains model)
+3) Run the application (retrieves model in ONNX format)
 ```python
 ./get_model <huggingface link here>
 ```
